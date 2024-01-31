@@ -5,6 +5,7 @@ WEB Link: https://www.imdb.com/chart/top/
 Used M code to convert ratings K & M:
 
 = Table.AddColumn(#"Replaced Value1", "Rating", each 
+    
     if Text.EndsWith([Column3], "K") then 
         Number.FromText(Text.Start([Column3], Text.Length([Column3]) - 1)) * 1000 
     else if Text.EndsWith([Column3], "M") then 
@@ -18,7 +19,6 @@ M code to get time converted into minutes:
 
 = let
     SourceText = [Column5],  
-
     ContainsHour = Text.Contains(SourceText, "h"),
     ContainsMinute = Text.Contains(SourceText, "m"),
 

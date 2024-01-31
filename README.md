@@ -1,4 +1,4 @@
-# IMBD-Top-Rating-Movies-
+# IMBD-Top-Rating-Movies-Dashbord
 
 WEB Link: https://www.imdb.com/chart/top/
 
